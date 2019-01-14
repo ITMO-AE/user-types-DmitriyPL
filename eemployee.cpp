@@ -23,7 +23,15 @@ int Eemployee::promote()
 
 int Eemployee::demote()
 {
-  return category--;
+    int res;
+    if ( category <= 0 ){
+         res = 0;
+
+    } else {
+        res = category--;
+    }
+
+    return res;
 }
 
 void Eemployee::printinfo()
